@@ -1,0 +1,10 @@
+[Unit]
+Description=Run gym-bot daily at 11:00 AM
+Requires=gym-bot.service
+
+[Timer]
+OnCalendar=*-*-* 11:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
